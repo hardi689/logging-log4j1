@@ -432,6 +432,7 @@ public class EnhancedPatternLayout extends Layout {
      * Initial size of internal buffer, no longer used.
      * @deprecated since 1.3
      */
+  //TODO Change the integer name hence it doesnt follow naming convention.
   protected final int BUF_SIZE = 256;
 
     /**
