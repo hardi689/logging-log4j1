@@ -98,10 +98,10 @@ public class ZeroConfSupport {
             Object[] values = new Object[6];
             values[0] = zone;
             values[1] = name;
-            values[2] = new Integer(port);
-            values[3] = new Integer(0);
-            //FIXME: USE INTEGER.VALUEOF(INSTEAD)
-            values[4] = new Integer(0);
+            values[2] = Integer.valueOf(port);
+            values[3] = Integer.valueOf(0);
+            
+            values[4] = Integer.valueOf(0);
             values[5] = hashtableProperties;
             Object result = constructor.newInstance(values);
             LogLog.debug("created serviceinfo: " + result);
