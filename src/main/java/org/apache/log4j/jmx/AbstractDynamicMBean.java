@@ -136,9 +136,10 @@ public abstract class AbstractDynamicMBean implements DynamicMBean,
   void postDeregister() {
     getLogger().debug("postDeregister is called.");
   }
-//TODO Empty Method in Abstract Class should be abstract instead.
+
   public
-  void postRegister(java.lang.Boolean registrationDone) {
+  abstract postRegister(java.lang.Boolean registrationDone) {
+	  System.out.print(dClassName);
   }
 
 
