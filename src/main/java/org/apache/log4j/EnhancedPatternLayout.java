@@ -439,7 +439,7 @@ public class EnhancedPatternLayout extends Layout {
      * Maximum capacity of internal buffer, no longer used.
      * @deprecated since 1.3
      */
-  protected final int MaxCapacity = 1024;
+  protected final int MAX_CAPACITY = 1024;
 
   /**
    * Customized pattern conversion rules are stored under this key in the
@@ -480,7 +480,7 @@ public class EnhancedPatternLayout extends Layout {
     this.conversionPattern = pattern;
     head = createPatternParser(
             (pattern == null) ? DEFAULT_CONVERSION_PATTERN : pattern).parse();
-    //FIXME .ignoreThrowable overides when object is constructed.
+    
     if (head instanceof BridgePatternConverter) {
         handlesExceptions = !((BridgePatternConverter) head).ignoresThrowable();
     } else {
