@@ -42,6 +42,7 @@ import java.util.Locale;
  * @since 1.2.16
  *
  */
+//FIXME : Class has too many methods consider refactoring.
 public final class LogMF extends LogXF {
     /**
      * private constructor.
