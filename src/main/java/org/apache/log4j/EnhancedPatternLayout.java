@@ -432,14 +432,14 @@ public class EnhancedPatternLayout extends Layout {
      * Initial size of internal buffer, no longer used.
      * @deprecated since 1.3
      */
-  //TODO Change the integer name hence it doesnt follow naming convention.
-  protected final int BUF_SIZE = 256;
+  
+  protected final int BUFSIZE = 256;
 
     /**
      * Maximum capacity of internal buffer, no longer used.
      * @deprecated since 1.3
      */
-  protected final int MAX_CAPACITY = 1024;
+  protected final int MaxCapacity = 1024;
 
   /**
    * Customized pattern conversion rules are stored under this key in the
