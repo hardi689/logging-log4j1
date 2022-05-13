@@ -100,6 +100,7 @@ public class ZeroConfSupport {
             values[1] = name;
             values[2] = new Integer(port);
             values[3] = new Integer(0);
+            //FIXME: USE INTEGER.VALUEOF(INSTEAD)
             values[4] = new Integer(0);
             values[5] = hashtableProperties;
             Object result = constructor.newInstance(values);
