@@ -55,7 +55,7 @@ public class ZeroConfSupport {
     public ZeroConfSupport(String zone, int port, String name) {
         this(zone, port, name, new HashMap());
     }
-//FIXME: Method should have only one return .
+
     private static Object createJmDNSVersion1()
     {
         try {
@@ -65,7 +65,7 @@ public class ZeroConfSupport {
         } catch (IllegalAccessException e) {
             LogLog.warn("Unable to instantiate JMDNS", e);
         }
-        return null;
+        
     }
 
     private static Object createJmDNSVersion3()
@@ -100,7 +100,7 @@ public class ZeroConfSupport {
             values[1] = name;
             values[2] = Integer.valueOf(port);
             values[3] = Integer.valueOf(0);
-            
+     
             values[4] = Integer.valueOf(0);
             values[5] = hashtableProperties;
             Object result = constructor.newInstance(values);
