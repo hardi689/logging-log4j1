@@ -103,7 +103,7 @@ public class StringMatchFilter extends Filter {
   public
   int decide(LoggingEvent event) {
     String msg = event.getRenderedMessage();
-
+//FIXME : Avoid using if statements without brackets.
     if(msg == null ||  stringToMatch == null)
       return Filter.NEUTRAL;
     
