@@ -103,19 +103,23 @@ public class StringMatchFilter extends Filter {
   public
   int decide(LoggingEvent event) {
     String msg = event.getRenderedMessage();
-//FIXME : Avoid using if statements without brackets.
-    if(msg == null ||  stringToMatch == null)
+    if(msg == null ||  stringToMatch == null) {
       return Filter.NEUTRAL;
-    
+    }
 
     if( msg.indexOf(stringToMatch) == -1 ) {
       return Filter.NEUTRAL;
-    } else { // we've got a match
-      if(acceptOnMatch) {
+    }
+    else { // we've got a match
+    }
+    	
+      if(acceptOnMatch) 
+      {
 	return Filter.ACCEPT;
-      } else {
+      } 
+      else {
 	return Filter.DENY;
       }
     }
   }
-}
+
