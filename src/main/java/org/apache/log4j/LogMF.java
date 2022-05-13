@@ -42,23 +42,22 @@ import java.util.Locale;
  * @since 1.2.16
  *
  */
-//FIXME : Class has too many methods consider refactoring.
+
 public final class LogMF extends LogXF {
     /**
      * private constructor.
      *
      */
-    private LogMF() {
-    }
+   
 
     /**
      * Number format.
      */
-    private static NumberFormat numberFormat = null;
+    private static NumberFormat numberFormat = null ;
     /**
      * Locale at time of last number format request.
      */
-    private static Locale numberLocale = null;
+    private static Locale numberLocale = null , dateLocale =null;
     /**
      * Date format.
      */
@@ -66,7 +65,7 @@ public final class LogMF extends LogXF {
     /**
      * Locale at time of last date format request.
      */
-    private static Locale dateLocale = null;
+   
 
     /**
      * Format number.
