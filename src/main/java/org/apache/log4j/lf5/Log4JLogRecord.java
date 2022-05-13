@@ -49,6 +49,7 @@ public class Log4JLogRecord extends LogRecord {
   /**
    * Constructs an instance of a <code>Log4JLogRecord</code>.
    */
+	//TODO Call super in constructor.
   public Log4JLogRecord() {
   }
 
