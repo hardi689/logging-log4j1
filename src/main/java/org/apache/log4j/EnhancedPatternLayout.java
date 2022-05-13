@@ -479,6 +479,7 @@ public class EnhancedPatternLayout extends Layout {
     this.conversionPattern = pattern;
     head = createPatternParser(
             (pattern == null) ? DEFAULT_CONVERSION_PATTERN : pattern).parse();
+    //FIXME .ignoreThrowable overides when object is constructed.
     if (head instanceof BridgePatternConverter) {
         handlesExceptions = !((BridgePatternConverter) head).ignoresThrowable();
     } else {
