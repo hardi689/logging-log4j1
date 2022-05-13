@@ -90,6 +90,7 @@ public class PropertyGetter {
                 || ex.getTargetException() instanceof InterruptedIOException) {
             Thread.currentThread().interrupt();
         }
+        //TODO: Logger calls should be surrounded by log level guards.
         LogLog.warn("Failed to get value of property " + name);
       } catch (RuntimeException ex) {
 	    LogLog.warn("Failed to get value of property " + name);
