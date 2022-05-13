@@ -55,7 +55,7 @@ public class ZeroConfSupport {
     public ZeroConfSupport(String zone, int port, String name) {
         this(zone, port, name, new HashMap());
     }
-
+//FIXME: Method should have only one return .
     private static Object createJmDNSVersion1()
     {
         try {
