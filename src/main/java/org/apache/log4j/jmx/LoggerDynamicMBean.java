@@ -274,7 +274,7 @@ public class LoggerDynamicMBean extends AbstractDynamicMBean
       cat.error("Could not add appenderMBean for ["+name+"].", e);
     }
   }
-
+//TODO : registrationDone parameter should be declared final which is not assigned.
   public
   void postRegister(java.lang.Boolean registrationDone) {
     appenderMBeanRegistration();
